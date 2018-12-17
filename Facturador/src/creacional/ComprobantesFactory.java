@@ -11,4 +11,21 @@ package creacional;
  */
 public class ComprobantesFactory {
     
+    public ComprobanteElectronico getComprobante(String tipoComprobante){
+      if(tipoComprobante == null){
+         return null;
+      }		
+      if(tipoComprobante.equalsIgnoreCase("FACTURA")){
+         return new Factura();
+         
+      } else if(tipoComprobante.equalsIgnoreCase("GUIAREMISION")){
+         return new GuiaRemision();
+         
+      } else if(tipoComprobante.equalsIgnoreCase("NOTACREDITO")){
+         return new NotaCredito();
+      }
+      
+      return null;
+   }
+    
 }
