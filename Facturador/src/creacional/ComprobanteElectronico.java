@@ -8,17 +8,17 @@ import java.util.List;
  *
  * @author Palacios
  */
-public class ComprobanteElectronico {
+public abstract class ComprobanteElectronico {
     
     protected List<String> detallesEmisor;
-    protected String nombreCliente;
+    protected Cliente cliente;
     protected long codigo;
     protected LocalDate fecha;
     protected String numeroAutorizacion;
     protected String claveAcceso;
 
-    public ComprobanteElectronico(String nombreCliente, long codigo, LocalDate fecha) {
-        this.nombreCliente = nombreCliente;
+    public ComprobanteElectronico(Cliente cliente, long codigo, LocalDate fecha) {
+        this.cliente = cliente;
         this.codigo = codigo;
         this.fecha = fecha;
         this.detallesEmisor = new LinkedList<>();
@@ -36,13 +36,14 @@ public class ComprobanteElectronico {
         this.detallesEmisor = detallesEmisor;
     }
 
-    public String getNombreCliente() {
-        return nombreCliente;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setNombreCliente(String nombreCliente) {
-        this.nombreCliente = nombreCliente;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
+
 
     public long getCodigo() {
         return codigo;

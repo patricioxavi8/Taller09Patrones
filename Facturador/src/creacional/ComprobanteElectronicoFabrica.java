@@ -5,12 +5,15 @@
  */
 package creacional;
 
+import estructural.Esquema;
+
 /**
  *
  * @author Patricio
  */
-public class ComprobantesFactory {
+public class ComprobanteElectronicoFabrica implements FabricaAbstracta {
     
+    @Override
     public ComprobanteElectronico getComprobante(String tipoComprobante){
       if(tipoComprobante == null){
          return null;
@@ -27,5 +30,12 @@ public class ComprobantesFactory {
       
       return null;
    }
+
+  
+
+    @Override
+    public Esquema getEsquema(String tipoEsquema) {
+        return null; 
+    }
     
 }

@@ -17,8 +17,8 @@ public class Factura extends ComprobanteElectronico{
     private List<String> productos;
     private double total;
 
-    public Factura(List<String> productos, double total, String nombreCliente, long codigo, LocalDate fecha) {
-        super(nombreCliente, codigo, fecha);
+    public Factura(List<String> productos, double total, Cliente Cliente, long codigo, LocalDate fecha) {
+        super(Cliente, codigo, fecha);
         this.productos = productos;
         this.total = total;
     }

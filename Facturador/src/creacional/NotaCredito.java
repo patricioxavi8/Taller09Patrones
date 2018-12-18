@@ -14,8 +14,8 @@ public class NotaCredito extends ComprobanteElectronico{
     private String detalleModificacion;
     private double valorAPagar;
 
-    public NotaCredito(String detalleModificacion, double valorAPagar, String nombreCliente, long codigo, LocalDate fecha) {
-        super(nombreCliente, codigo, fecha);
+    public NotaCredito(String detalleModificacion, double valorAPagar, Cliente cliente, long codigo, LocalDate fecha) {
+        super(cliente, codigo, fecha);
         this.detalleModificacion = detalleModificacion;
         this.valorAPagar = valorAPagar;
     }

@@ -17,8 +17,8 @@ public class GuiaRemision extends ComprobanteElectronico {
     private String placaVehiculo;
     private List<String> listaProductos;
 
-    public GuiaRemision(String destino, String placaVehiculo, List<String> listaProductos, String nombreCliente, long codigo, LocalDate fecha) {
-        super(nombreCliente, codigo, fecha);
+    public GuiaRemision(String destino, String placaVehiculo, List<String> listaProductos, Cliente cliente, long codigo, LocalDate fecha) {
+        super(cliente, codigo, fecha);
         this.destino = destino;
         this.placaVehiculo = placaVehiculo;
         this.listaProductos = listaProductos;

@@ -20,6 +20,7 @@ public class AutorizadorSRI {
         this.esquema_de_autorizacion = esquema_de_autorizacion;
     }
     
+    
     public void autorizar(ComprobanteElectronico comprobante){
         esquema_de_autorizacion.autorizar(comprobante);
     }
