@@ -4,13 +4,14 @@
  * and open the template in the editor.
  */
 package creacional;
+import estructural.ComprobanteE;
 import java.time.LocalDate;
 
 /**
  *
  * @author Palacios
  */
-public class NotaCredito extends ComprobanteElectronico{
+public class NotaCredito extends ComprobanteElectronico implements ComprobanteE{
     private String detalleModificacion;
     private double valorAPagar;
 
@@ -40,7 +41,15 @@ public class NotaCredito extends ComprobanteElectronico{
     }
     
     
-    
+        @Override
+    public void agregarLogo() {
+        System.out.println("SIN LOGO");
+    }
+
+    @Override
+    public void agregarLema() {
+        System.out.println("SIN LEMA");
+    }
     
     
 }
