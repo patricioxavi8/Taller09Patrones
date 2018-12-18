@@ -53,6 +53,11 @@ public class Factura extends ComprobanteElectronico implements ComprobanteE{
         System.out.println("SIN LEMA");
     }
 
+    @Override
+    public String toString() {
+        return "Factura{" + "productos=" + productos + ", total=" + total + '}';
+    }
+
     
     
     

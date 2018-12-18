@@ -63,5 +63,12 @@ public class GuiaRemision extends ComprobanteElectronico implements ComprobanteE
     public void agregarLema() {
         System.out.println("SIN LEMA");
     }
+
+    @Override
+    public String toString() {
+        return "GuiaRemision{" + "destino=" + destino + ", placaVehiculo=" + placaVehiculo + ", listaProductos=" + listaProductos + '}';
+    }
+    
+    
     
 }

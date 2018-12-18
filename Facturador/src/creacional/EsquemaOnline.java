@@ -33,4 +33,10 @@ public class EsquemaOnline implements Esquema{
         this.codigoSRI = codigoSRI;
     }
 
+    @Override
+    public String toString() {
+        return "EsquemaOnline{" + "codigoSRI=" + codigoSRI + '}';
+    }
+
+    
 }

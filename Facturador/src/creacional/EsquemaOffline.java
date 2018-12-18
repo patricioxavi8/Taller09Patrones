@@ -34,6 +34,11 @@ public class EsquemaOffline implements Esquema{
         this.claveAcceso = claveAcceso;
     }
 
+    @Override
+    public String toString() {
+        return "EsquemaOffline{" + "claveAcceso=" + claveAcceso + '}';
+    }
+
   
     
 }

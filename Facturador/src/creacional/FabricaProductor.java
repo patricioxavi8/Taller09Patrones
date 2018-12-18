@@ -12,7 +12,7 @@ package creacional;
  */
 public class FabricaProductor {
     
-    public FabricaAbstracta getFabrica(String tipoFabrica){
+    public static FabricaAbstracta getFabrica(String tipoFabrica){
      
       if(tipoFabrica == null){
          return null;

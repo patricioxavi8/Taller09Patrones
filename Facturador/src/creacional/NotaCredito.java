@@ -50,6 +50,12 @@ public class NotaCredito extends ComprobanteElectronico implements ComprobanteE{
     public void agregarLema() {
         System.out.println("SIN LEMA");
     }
+
+    @Override
+    public String toString() {
+        return "NotaCredito{" + "detalleModificacion=" + detalleModificacion + ", valorAPagar=" + valorAPagar + '}';
+    }
+    
     
     
 }
