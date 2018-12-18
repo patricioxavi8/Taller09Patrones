@@ -5,6 +5,7 @@
  */
 package creacional;
 
+import estructural.ComprobanteE;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author Palacios
  */
-public class GuiaRemision extends ComprobanteElectronico {
+public class GuiaRemision extends ComprobanteElectronico implements ComprobanteE{
     private String destino;
     private String placaVehiculo;
     private List<String> listaProductos;
@@ -53,6 +54,14 @@ public class GuiaRemision extends ComprobanteElectronico {
     
     
     
-    
+        @Override
+    public void agregarLogo() {
+        System.out.println("SIN LOGO");
+    }
+
+    @Override
+    public void agregarLema() {
+        System.out.println("SIN LEMA");
+    }
     
 }
