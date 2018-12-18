@@ -5,6 +5,7 @@
  */
 package creacional;
 
+import estructural.ComprobanteE;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author Palacios
  */
-public class Factura extends ComprobanteElectronico{
+public class Factura extends ComprobanteElectronico implements ComprobanteE{
     
     private List<String> productos;
     private double total;
@@ -40,6 +41,16 @@ public class Factura extends ComprobanteElectronico{
 
     public void setTotal(double total) {
         this.total = total;
+    }
+
+    @Override
+    public void agregarLogo() {
+        System.out.println("SIN LOGO");
+    }
+
+    @Override
+    public void agregarLema() {
+        System.out.println("SIN LEMA");
     }
 
     

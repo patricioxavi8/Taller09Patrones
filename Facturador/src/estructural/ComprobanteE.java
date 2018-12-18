@@ -10,6 +10,6 @@ package estructural;
  * @author Patricio
  */
 public interface ComprobanteE {
-    public void agregarLogo(String logo);
-    public void agregarLema(String lema);
+    public void agregarLogo();
+    public void agregarLema();
 }

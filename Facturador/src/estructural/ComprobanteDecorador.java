@@ -19,13 +19,13 @@ public abstract class ComprobanteDecorador implements ComprobanteE{
     }
 
     @Override
-    public void agregarLogo(String logo) {
-        c.agregarLogo(logo);
+    public void agregarLogo() {
+        c.agregarLogo();
     }
 
     @Override
-    public void agregarLema(String lema) {
-        c.agregarLema(lema);
+    public void agregarLema() {
+        c.agregarLema();
     }
     
     

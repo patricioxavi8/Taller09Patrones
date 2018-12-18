@@ -16,8 +16,8 @@ public class LogoDecorador extends ComprobanteDecorador{
     }
     
     @Override
-    public void agregarLogo(String logo){
-        System.out.println(logo);
+    public void agregarLogo(){
+        System.out.println("logo agregado");
     
     }
     

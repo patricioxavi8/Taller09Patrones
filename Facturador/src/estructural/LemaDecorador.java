@@ -16,9 +16,9 @@ public class LemaDecorador extends ComprobanteDecorador{
     }
     
     @Override
-    public void agregarLema(String lema){
+    public void agregarLema(){
     
-        System.out.println(lema);
+        System.out.println("lema agregado");
     }
     
 }
